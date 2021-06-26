@@ -28,6 +28,7 @@ board.addEventListener('click', event => {
         event.target.remove();
         createRandomCircle();
     }
+
 })
 
 function startGame () {
@@ -73,8 +74,12 @@ function createRandomCircle() {
     circle.style.left = `${x}px`;
 
     board.append(circle);
+
+
 }
+
 
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
+
